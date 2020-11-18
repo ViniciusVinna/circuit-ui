@@ -51,9 +51,6 @@ const baseStyles = ({ theme }: StyleProps) => css`
 `;
 
 const NotificationListWrapper = styled('ul')<{}>(baseStyles);
-
-// FIXME: how to use li: Card.withComponent('li');
-// const NotificationListCard = Card.withComponent('li');
 const NotificationListCard = styled(Card)<NotificationListProps>();
 
 /**
