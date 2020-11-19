@@ -30,6 +30,8 @@ export const createCurrencyMask = (
     groupDelimiter: thousandsSeparatorSymbol = ',',
   } = currencyFormat;
 
+  // TODO: Add types.
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return,@typescript-eslint/no-unsafe-call
   return createNumberMask({
     prefix: '',
     suffix: '',

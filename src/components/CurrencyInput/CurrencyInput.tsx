@@ -79,6 +79,7 @@ export const CurrencyInput = React.forwardRef(
       minimumFractionDigits,
       maximumFractionDigits,
     } = currencyFormat;
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const numberMask = createCurrencyMask(currencyFormat, locale);
     const placeholderString = formatPlaceholder(placeholder, locale, {
       minimumFractionDigits,
@@ -106,6 +107,7 @@ export const CurrencyInput = React.forwardRef(
         render={(inputRef, { defaultValue, ...renderProps }) => (
           <Input
             ref={inputRef}
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
             value={defaultValue}
             renderPrefix={renderPrefix}
             renderSuffix={renderSuffix}
@@ -115,6 +117,7 @@ export const CurrencyInput = React.forwardRef(
             {...renderProps}
           />
         )}
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
         mask={numberMask}
         {...props}
       />

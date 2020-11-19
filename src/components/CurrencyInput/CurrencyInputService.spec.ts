@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 
+/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access */
+
 import createNumberMask from 'text-mask-addons/dist/createNumberMask';
 
 import { createCurrencyMask, formatPlaceholder } from './CurrencyInputService';
